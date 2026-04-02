@@ -1,5 +1,8 @@
 #include <iostream>
 
+// Program kalian ketika jalan, di mana sih? bagaimana sih?
+// Dialokasi dalam memori (RAM)
+
 // Deretan dari nilai berdasarkan tipe data tertentu (HANYA 1 JENIS)
 // Semua nilainya pada satu "wadah" yang sama
 
@@ -7,7 +10,7 @@
 // [1, 2, 3, 4, 5, 6, ...]
 int a = 0;
 int b = 1;
-// a, b, [1, 2, 3, 4, 5]
+// a, b, abc_1, abc_2, abc_3, ...
 
 // GAME_1, GAME_2, GAME_4 (ONGOING)
 // Program selesai -> nilai di posisi memori kita ingin pakai belum diclear
@@ -18,7 +21,7 @@ int b = 1;
 // [42, 43, ???], 54
 // ['a', 'b', 'c'] --> ubah isi array ini jadi ['x', 'y', 'z']? 'A' = 65 (ASCII)
 
-int abc[] = {a, b, 3, 4, 5};
+int abc[] = {1, 2, 3, 4, 5}; // -> 1, 2, 3, 4, 5
 
 int c[6] = {4, 7, 1, 5, 6}; // --> ??? kemungkinan besar dianggap 0 di posisi terakhir!
 
@@ -27,14 +30,18 @@ int c[6] = {4, 7, 1, 5, 6}; // --> ??? kemungkinan besar dianggap 0 di posisi te
 // 2-1 = 1 --> index ke-satu
 // 7-1 = 6 --> index ke-enam
 
-// Di dalam memori, array itu diisi: a, b, [c_1, c_2, c_3], [[def_1_1, def_1_2, def_1_3], ...]
+// Di dalam memori, array itu diisi: a, b, c_1, c_2, c_3, ...,  1, 2, 3, ...
 
 // Fungsi array ini apaan sih?
 // For loop!!!
 
 
 // ARRAY 2 DIMENSI --> Simply matriks
-int def[3][3] = {{1, 2, 3}, {0, 0, 0}, {1, 1, 1}}; // 2 Baris, 3 Kolom!
+int def[3][3] = {
+	{1, 2, 3},
+	{0, 0, 0},
+	{1, 1, 1}
+}; // 3 Baris, 3 Kolom!
 
 // ARRAY N DIMENSI --> Infinite!!!
 // int ghi[][][][][][] = {{{{{{}}}}}};
